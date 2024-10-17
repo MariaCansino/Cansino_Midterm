@@ -1,0 +1,24 @@
+name = input("Enter your name: ")
+section  = input ("Enter your section: ")
+prelim = float(input("Enter you Prelim Grade: "))
+midterm = float(input("Enter you Midterm Grade: "))
+final = float(input("Enter you final grade: "))
+
+
+if prelim < 40.0 or prelim > 100.0:
+    print("Error: your grade must stay between 40 and 100.")
+elif midterm <40.0 or midterm > 100.0:
+    print("Error: your grade must stay between 40 and 100.")
+elif final < 40.0 or final > 100.0:
+    print("Error: your grade must stay between 40 or 100.")
+else:
+    final_grade = (prelim * 1.00) 
+    Final_grade = (midterm * 1.00) 
+    finale_grade = (final * 1.00)
+    total = final_grade + Final_grade + finale_grade
+    avg = (total / 3)
+
+    
+print(f"Final Grade: {avg}")
+
+
